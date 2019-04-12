@@ -1,4 +1,4 @@
-# ZF BONE tools ![ZF BONE tools logo.tif](icons/ZF BONE tools logo.tif)
+# ZF BONE tools ![](icons/ZF_BONE_tools_logo.tif)
 
 ## Introduction
 
@@ -17,7 +17,7 @@ Please cite as accordingly: Tarasco et al., 2020 BAP paper xwxsxsxsxsqfdswfcdwfe
 ## How to use it?
 
 
-######OPERCULUM ASSAY ![](icons/Operculum assay logo.tif) 
+######OPERCULUM ASSAY ![](icons/Operculum_assay_logo.tif) 
 
 
 This macro was developed from the analysis principles described in Tarasco et al., 2017
@@ -25,7 +25,7 @@ This macro was developed from the analysis principles described in Tarasco et al
 
 
 
-###### SCALES ASSAY ![](icons/Scales assay logo.tif)
+###### SCALES ASSAY ![](icons/Scales_assay_logo.tif)
 
 
 
