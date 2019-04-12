@@ -17,7 +17,7 @@ Please cite as accordingly: Tarasco et al., 2020 BAP paper xwxsxsxsxsqfdswfcdwfe
 ## How to use it?
 
 
-######OPERCULUM ASSAY ![](icons/Operculum_assay_logo.jpg) 
+###### OPERCULUM ASSAY ![](icons/Operculum_assay_logo.jpg) 
 
 
 This macro was developed from the analysis principles described in Tarasco et al., 2017
