@@ -1,8 +1,10 @@
 # Zebrafish-BONE-tools
+## Introduction
 
-**Test**
+## How to install
 
-TEST one
+## How to cite us
 
+## How to use it
 
-HELLO WORLD
+## What does it do
