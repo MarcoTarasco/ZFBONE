@@ -1,4 +1,4 @@
-# ZF BONE tools ![](https://raw.githubusercontent.com/MarcoTarasco/Zebrafish-BONE-tools/master/icons/ZF%20BONE%20tools%20logo.tif?token=AvQgcHfYdY24pTDPHV48-hZSorN7cIsQks5csJxCwA%3D%3D)
+# ZF BONE tools ![](icons/ZF BONE tools logo.tif)
 
 ## Introduction
 
@@ -17,7 +17,7 @@ Please cite as accordingly: Tarasco et al., 2020 BAP paper xwxsxsxsxsqfdswfcdwfe
 ## How to use it?
 
 
-######OPERCULUM ASSAY ![](https://raw.githubusercontent.com/MarcoTarasco/Zebrafish-BONE-tools/master/icons/Operculum%20assay%20logo.tif?token=AvQgcAuGn1jhBacy8WsYgtYdXB4viQkUks5csJz0wA%3D%3D) 
+######OPERCULUM ASSAY ![](icons/Operculum assay logo.tif) 
 
 
 This macro was developed from the analysis principles described in Tarasco et al., 2017
@@ -25,7 +25,7 @@ This macro was developed from the analysis principles described in Tarasco et al
 
 
 
-###### SCALES ASSAY ![](https://raw.githubusercontent.com/MarcoTarasco/Zebrafish-BONE-tools/master/icons/Scales%20assay%20logo.tif?token=AvQgcBOqNxg1fYPeoTBPz0iZNa6MoVUFks5csJ1JwA%3D%3D)
+###### SCALES ASSAY ![](icons/Scales assay logo.tif)
 
 
 
