@@ -1,4 +1,4 @@
-# ZF BONE tools ![](icons/ZF BONE tools logo.tif)
+# ZF BONE tools ![ZF BONE tools logo.tif](icons/ZF BONE tools logo.tif)
 
 ## Introduction
 
