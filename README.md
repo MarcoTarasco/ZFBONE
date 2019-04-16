@@ -2,10 +2,15 @@
 *Developed by Marco Tarasco & Fabrice Cordelières.*
 ## Introduction
 
+Bone disorders affect millions of people worldwide and available therapeutics have a limited efficacy, often presenting undesirable side effects. As such, there is a need for novel molecules with bone anabolic properties. 
+Several zebrafish systems have been established to assess the effects of coumpounds on bone formation, mineralization and patterning. 
 
+The aim of this work was to establish a rapid, reliable and reproducible set of semi-automized tools to screen for molecules with osteo-activities.
+
+The same tools can be applied to screen molecules with bone anabolic effects or to evaluate the effects of pollutant on bone (osteotoxicity).
 
 ## How to install/run it?
-Download the file **"ZF Bone tools.ijm"** from the repository and drag it into the directory: 
+Download the file **"ZF Bone tools.ijm"** from the repository and drag it to the directory: 
 ⁨
 
 Applications ▸ Fiji⁩ ▸ ⁨macros⁩ ▸ toolsets ▸ ZF Bone tools.ijm
@@ -38,13 +43,13 @@ ZF BONE tools is composed by different macros:
 
 **Quick introduction**
 
-The *operculum assay tool* allows the user to automatically measure the area of the head and the area of the operculum. It will then compute the ratio to normalize for inter-specimen variability.
+The *operculum assay tool* allows the user to automatically measure the area of the head and the area of the operculum. It will then compute and return the ratio to normalize for inter-specimen variability.
 
 This macro is based on the publication: Tarasco, M., Laizé, V., Cardeira, J., Cancela, M.L., Gavaia, P.J., 2017. The zebrafish operculum: a powerful system to assess osteogenic bioactivities of molecules with pharmacological and toxicological relevance. Comp. Biochem. Physiol. Part C 147, 45–52. 
 
 **Imput data**
 
-The macro needs an open image (RGB image) to start the process.
+The macro needs an open image (RGB and flurorescent image) to start the process.
 In case other type of images are opened, the macro will recognize it and stop the process. 
 
 **Output data**
@@ -55,13 +60,16 @@ The macro will automatically create a folder (*"analized"*) in the same image di
 **How to use it**
 
 Simply drag/open an image in Fiji and press the corresponded icon. 
-The user will be asked to first draw the region of interest (i.e. the fish head) and then a second region of interest (i.e. the operculum).
-In case one ROI is missing the macro will stop and wait for it to proceed.
-
-The macro needs an open image to start the process.
-It will allert the user in case was open the wrong image
+The user will be asked to draw the first region of interest (i.e. the fish head) and then the second region of interest (i.e. the operculum).
+In case one ROI is missing the macro will stop and wait for the missign ROI to proceed.
 
 ###### OPERCULUM ASSAY BATCH MODE ![](icons/zebrafish_operculum_batch_mode.jpg) 
+This macro uses the same principles and fuction of the operculum assay. 
+The only difference is that by cliking on the *operculum assay batch mode* the user will be asked to open the directory containing the images to be analyzed and it will start automatically opening one by one.
+How to use the macro and the output are complitely the same of the *operculum assay*. In the case the user stops analysing the images and re-open the same folder afterwards, the macro will recognize the images that were already analized and it will restart from the last image that was not analyzed.
+
+
+
 
 ***
 ###### SCALES ASSAY ![](icons/Scales_assay_logo.jpg)
@@ -73,15 +81,22 @@ It will allert the user in case was open the wrong image
 
 
 
+## How does it work?
+fdsvdsvdvssd
+dsvdsvdsv
+
+vdsvd
+vdsvs
 
 
+
+-
 
 
 
  
--
-LAB LOGo
 
+![](icons/Bioskel_logo.jpg)
 ![](http://www.bic.u-bordeaux.fr/wp-content/uploads/2019/02/logo-FBI-BIC-300p-v0.png)
 ![](http://eubias.org/NEUBIAS/wp-content/uploads/2018/04/Webbanner_logosNEUBIAS-COST-sm.jpg)
 	
