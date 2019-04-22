@@ -38,10 +38,6 @@ ZF BONE tools is composed by different macros:
 ***
 ###### OPERCULUM ASSAY ![](icons/Operculum_assay_logo.jpg) 
 
-<iframe width="560" height="315" src="
-https://www.youtube.com/embed/KXP4lwZmuEU
-" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 **Quick introduction**
 
