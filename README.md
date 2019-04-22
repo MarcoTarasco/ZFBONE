@@ -73,14 +73,76 @@ How to use the macro and the output are complitely the same of the *operculum as
 
 ***
 ###### SCALES ASSAY ![](icons/Scales_assay_logo.jpg)
+**Quick introduction**
+
+The *scale assay tool* allows the user to automatically analyse individual or multiple scales to evaluate osteoclast activity (scales stained through
+TRAP enzymatic assay) or demineralized bone (scales stained through Von Kossa). Once the user click on this tool, it will be asked to select which kind of scales assay was performed. 
+
+From each scale the macro will return: scale area, circularity, aspect ratio, corrected circularity, TRAP positive area/Demineralized area (dependign on the analysis) and a normalized TRAP positive area/Demineralized area over the total scale area. 
+
+This macro was developed and published in the publication: Tarasco et al., XXXX
+
+
+**Imput data**
+
+The macro needs an open image (RGB and brigthfield image) to start the process. In case other type of images are opened, the macro will recognize it and stop the process.
+
+
+**Output data**
+
+The macro will automatically create a folder ("analized") in the same image directory which will contain the result table named accordigly to the type of staining assay chosen and a screenshot of the image analized showing the scales selected and the respectively TRAP positivie/demineralized areas. This allows the user to confirm that all the area selected are in fact the one wanted.
+
+
+**How to use it**
 
 
 
 ***
 ###### CAUDAL FIN ASSAY ![](icons/Caudal_fin_assay_logo.jpg)
+**Quick introduction**
+
+
+**Imput data**
 
 
 
+**Output data**
+
+
+
+**How to use it**
+
+***
+###### RAY BONE DENSITY ![](icons/ray_bone_density.jpg)
+**Quick introduction**
+
+
+**Imput data**
+
+
+
+**Output data**
+
+
+
+**How to use it**
+
+
+***
+###### DATA PULLER ![](icons/data_puller.jpg)
+**Quick introduction**
+
+
+**Imput data**
+
+
+
+**Output data**
+
+
+
+**How to use it**
+***
 ## How does it work?
 fdsvdsvdvssd
 dsvdsvdsv
