@@ -2,10 +2,11 @@
 *Developed by Marco Tarasco & Fabrice Cordelières.*
 ## Introduction
 
+
 Bone disorders affect millions of people worldwide and available therapeutics have a limited efficacy, often presenting undesirable side effects. As such, there is a need for novel molecules with bone anabolic properties. 
 Several zebrafish systems have been established to assess the effects of coumpounds on bone formation, mineralization and patterning. 
 
-The aim of this work was to establish a rapid, reliable and reproducible set of semi-automized tools to screen for molecules with osteo-activities.
+The aim of this work was to establish a rapid, reliable and reproducible set of semi-automized tools to screen for molecules with osteo-activities, based on already existing zebrafish systems.
 
 The same tools can be applied to screen molecules with bone anabolic effects or to evaluate the effects of pollutant on bone (osteotoxicity).
 
@@ -39,6 +40,8 @@ ZF BONE tools is composed by different macros:
 ###### OPERCULUM ASSAY ![](icons/Operculum_assay_logo.jpg) 
 
 
+
+
 **Quick introduction**
 
 The *operculum assay tool* allows the user to automatically measure the area of the head and the area of the operculum. It will then compute and return the ratio to normalize for inter-specimen variability.
@@ -55,11 +58,11 @@ In case other type of images are opened, the macro will recognize it and stop th
 The macro will automatically create a folder (*"analized"*) in the same image directory which will contain the result table and a screenshot of the image analized showing the results and the ROI selected. This allows the user to confirm that all the  area selected are in fact the one wanted. 
 
 
-**How to use it**
+**How to use it?**
 
-Simply drag/open an image in Fiji and press the corresponded icon. 
-The user will be asked to draw the first region of interest (i.e. the fish head) and then the second region of interest (i.e. the operculum).
-In case one ROI is missing the macro will stop and wait for the missign ROI to proceed.
+[![](http://img.youtube.com/vi/KXP4lwZmuEU/0.jpg)](http://www.youtube.com/watch?v=KXP4lwZmuEU "Operculum assay")
+
+
 
 ###### OPERCULUM ASSAY BATCH MODE ![](icons/zebrafish_operculum_batch_mode.jpg) 
 This macro uses the same principles and fuction of the operculum assay. 
@@ -99,20 +102,25 @@ The macro will automatically create a folder ("analized") in the same image dire
 ###### CAUDAL FIN ASSAY ![](icons/Caudal_fin_assay_logo.jpg)
 **Quick introduction**
 
+The caudal fin assay tool allows the user to quantify the effects on bone and tissue regeneration of regenerated caudal fins. It will then return raw measuraments and also compute normalization for inter-specimen variability.
+
+This macro is based on the publication: Cardeira, J., Gavaia, P.J., Fernández, I., Cengiz, I.F., Moreira-Silva, J., Oliveira, J.M., Reis, R.L., Cancela, M.L., Laizé, V., 2016. Quantitative assessment of the regenerative and mineralogenic performances of the zebrafish caudal fin. Sci. Rep. 6, 39191.
 
 **Imput data**
 
+The macro will ask the user to first open a RGB brightfield image and a RGB fluorescent image (i.e. the correspondent fluorescent image). In case other type of images are opened, the macro will recognize it and stop the process.
 
 
 **Output data**
 
-
+The macro will automatically create a folder ("analized") in the same image directory which will contain the result table and a screenshot of the image analized showing the selected region of interest. This allows the user to confirm that all the area selected are in fact the one wanted.
 
 **How to use it**
 
 ***
 ###### RAY BONE DENSITY ![](icons/ray_bone_density.jpg)
 **Quick introduction**
+
 
 
 **Imput data**
