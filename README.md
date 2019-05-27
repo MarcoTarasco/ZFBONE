@@ -58,7 +58,7 @@ In case other type of images are opened, the macro will recognize it and stop th
 The macro will automatically create a folder (*"analized"*) in the same image directory which will contain the result table and a screenshot of the image analized showing the results and the ROI selected. This allows the user to confirm that all the  area selected are in fact the one wanted. 
 
 
-**How to use it?**
+**How to use it?  check the tutorial!**
 
 [![](http://img.youtube.com/vi/KXP4lwZmuEU/0.jpg)](http://www.youtube.com/watch?v=KXP4lwZmuEU "Operculum assay")
 
@@ -94,7 +94,9 @@ The macro needs an open image (RGB and brigthfield image) to start the process. 
 The macro will automatically create a folder ("analized") in the same image directory which will contain the result table named accordigly to the type of staining assay chosen and a screenshot of the image analized showing the scales selected and the respectively TRAP positivie/demineralized areas. This allows the user to confirm that all the area selected are in fact the one wanted.
 
 
-**How to use it**
+**How to use it?  check the tutorial!**
+
+VIDEO WILL BE ADDED HERE
 
 
 
@@ -102,7 +104,7 @@ The macro will automatically create a folder ("analized") in the same image dire
 ###### CAUDAL FIN ASSAY ![](icons/Caudal_fin_assay_logo.jpg)
 **Quick introduction**
 
-The caudal fin assay tool allows the user to quantify the effects on bone and tissue regeneration of regenerated caudal fins. It will then return raw measuraments and also compute normalization for inter-specimen variability.
+The *caudal fin assay* tool allows the user to quantify the effects on bone and tissue regeneration of regenerated caudal fins. It will then return raw measuraments and also compute normalization for inter-specimen variability.
 
 This macro is based on the publication: Cardeira, J., Gavaia, P.J., Fernández, I., Cengiz, I.F., Moreira-Silva, J., Oliveira, J.M., Reis, R.L., Cancela, M.L., Laizé, V., 2016. Quantitative assessment of the regenerative and mineralogenic performances of the zebrafish caudal fin. Sci. Rep. 6, 39191.
 
@@ -115,39 +117,55 @@ The macro will ask the user to first open a RGB brightfield image and a RGB fluo
 
 The macro will automatically create a folder ("analized") in the same image directory which will contain the result table and a screenshot of the image analized showing the selected region of interest. This allows the user to confirm that all the area selected are in fact the one wanted.
 
-**How to use it**
+**How to use it?  check the tutorial!**
+
+VIDEO WILL BE ADDED HERE
 
 ***
 ###### RAY BONE DENSITY ![](icons/ray_bone_density.jpg)
 **Quick introduction**
 
+The *ray bone density* tool allows the user to assess the bone mineral density of caudal fin rays. Selecting any ray number established by the user,the macro will return an intensity profile of each seleceted ray. The macro will the align each profile by the caudal fin amputation plane (point of higher intensity). the profile of each ray is then normalize to 1 in order to compare each ray among each other.
 
+This macro was developed and published in the publication: Tarasco et al., XXXX
 
 **Imput data**
 
-
+The macro will ask the user to first open an image (macro developed on microCT aquisitions saved as 16-bit tif). In case there is not an image open, the macro will stop.
 
 **Output data**
 
+The macro will automatically create a folder ("analized") in the same image directory which will contain the result table. In the result table, each ray intensity profile will be saved as raw data, aligned data and the normalized to 1 data. The analysed image showing the rays selected and the respectively intensity plot will be saved also. This allows the user to confirm that all the area selected are in fact the one wanted.
 
 
-**How to use it**
+
+**How to use it?  check the tutorial!**
+
+VIDEO WILL BE ADDED HERE
 
 
 ***
 ###### DATA PULLER ![](icons/data_puller.jpg)
 **Quick introduction**
 
+Tha *data puller tool* it was created in order to allign each analysed rays from control and treated fins in orderd to be able to compare them. 
+
 
 **Imput data**
 
-
+The macro will ask the user to selected the folder containing previuous analysis obtained by the *ray density tool* previusly described. 
 
 **Output data**
 
+The macro will return a result table containing all the rays alligned. Will also save a intensity profile image showing all the rays. 
 
 
-**How to use it**
+**How to use it?  check the tutorial!**
+
+VIDEO WILL BE ADDED HERE
+
+
+
 ***
 ## How does it work?
 fdsvdsvdvssd
