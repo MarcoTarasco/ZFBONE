@@ -1,40 +1,48 @@
-# ZF BONE tools ![](icons/ZF_BONE_tools_logo.jpg) ![](icons/Operculum_assay_logo.jpg) ![](icons/Scales_assay_logo.jpg) ![](icons/Caudal_fin_assay_logo.jpg) 
+# ZFBONE 
+![](icons/menu2.jpg) 
+
+
+
 *Developed by Marco Tarasco & Fabrice Cordelières.*
 ## Introduction
 
 
-Bone disorders affect millions of people worldwide and available therapeutics have a limited efficacy, often presenting undesirable side effects. As such, there is a need for novel molecules with bone anabolic properties. 
-Several zebrafish systems have been established to assess the effects of coumpounds on bone formation, mineralization and patterning. 
+ZF BONE is a FIJI-based toolbox that provides tools needed for a rapid, reliable and semi-automatized morphometric analysis of zebrafish bone structures to identify compounds that have an effect on bone formation, mineralization or patterning in zebrafish. These tools are useful to screen/study compounds with bone anabolic effects (osteoactives) and bone toxic effects (osteotoxicants).
 
-The aim of this work was to establish a rapid, reliable and reproducible set of semi-automized tools to screen for molecules with osteo-activities, based on already existing zebrafish systems.
+## The idea
+The idea behind the development of ZFBONE it is simple!
 
-The same tools can be applied to screen molecules with bone anabolic effects or to evaluate the effects of pollutant on bone (osteotoxicity).
+Provide the scientific community ..........
+
 
 ## How to install/run it?
-Download the file **"ZF Bone tools.ijm"** from the repository and drag it to the directory: 
-⁨
+Download the file "**ZFBONE.ijm**" from the repository and save it in the Fiji folder for macros. 
 
-Applications ▸ Fiji⁩ ▸ ⁨macros⁩ ▸ toolsets ▸ ZF Bone tools.ijm
+File location is: Applications\Fiji\macros\toolsets\ **ZFBONE.ijm**
 
-Then open Fiji, click on the last bottom of the toolbar: ">>" icon ("More tools" menu) and click on ZF Bone tools.
 
-Now ZB BONE toolbar will appear on the main Fiji toolbar.
+Open Fiji, go to the "More tools" menu and click on ">>" in the toolbar then select the option “ZFBONE”. 
 
-*The same steps will work for ImageJ.*
+ZFBONE toolbar will appear in the main Fiji toolbar.
+
+*The same procedure can be used for ImageJ.*
+
 
 ## How to cite us?
-Please cite us accordingly: Tarasco et al., 2020.......
+Please cite us accordingly: **ADD paper citation**
+
+
 
 ## How to use it?
 
-ZF BONE tools is composed by different macros:
+ZFBONE toolbox proposes the following macros:
 
-* Operculum assay
-* Operculum assay batch mode
-* Scales assay
-* Caudal fin assay
-* Ray bone density
-* Data puller 
+*	Operculum assay
+*	Scales assay
+*	Caudal fin assay
+*	Ray intensity
+
+ 
 
 ***
 ###### OPERCULUM ASSAY ![](icons/Operculum_assay_logo.jpg) 
@@ -64,10 +72,6 @@ The macro will automatically create a folder (*"analized"*) in the same image di
 
 
 
-###### OPERCULUM ASSAY BATCH MODE ![](icons/zebrafish_operculum_batch_mode.jpg) 
-This macro uses the same principles and fuction of the operculum assay. 
-The only difference is that by cliking on the *operculum assay batch mode* the user will be asked to open the directory containing the images to be analyzed and it will start automatically opening one by one.
-How to use the macro and the output are complitely the same of the *operculum assay*. In the case the user stops analysing the images and re-open the same folder afterwards, the macro will recognize the images that were already analized and it will restart from the last image that was not analyzed.
 
 
 
@@ -101,7 +105,7 @@ VIDEO WILL BE ADDED HERE
 
 
 ***
-###### CAUDAL FIN ASSAY ![](icons/Caudal_fin_assay_logo.jpg)
+###### CAUDAL FIN ASSAY ![](icons/Caudal_fin.jpg)
 **Quick introduction**
 
 The *caudal fin assay* tool allows the user to quantify the effects on bone and tissue regeneration of regenerated caudal fins. It will then return raw measuraments and also compute normalization for inter-specimen variability.
@@ -167,16 +171,10 @@ VIDEO WILL BE ADDED HERE
 
 
 ***
-## How does it work?
-fdsvdsvdvssd
-dsvdsvdsv
-
-vdsvd
-vdsvs
+## Acknowledgements
+We are thankfull for the support of the following labs & institutions
 
 
-
--
 
 
 
