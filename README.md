@@ -7,13 +7,20 @@
 ## Introduction
 
 
-ZF BONE is a FIJI-based toolbox that provides tools needed for a rapid, reliable and semi-automatized morphometric analysis of zebrafish bone structures to identify compounds that have an effect on bone formation, mineralization or patterning in zebrafish. These tools are useful to screen/study compounds with bone anabolic effects (osteoactives) and bone toxic effects (osteotoxicants).
+ZFBONE is a FIJI-based toolset that provides tools needed for a rapid, reliable and semi-automatized morphometric analysis of zebrafish bone structures to identify compounds that have an effect on bone formation, mineralization or patterning in zebrafish. These tools are useful to screen/study compounds with bone anabolic effects (osteoactives) and bone toxic effects (osteotoxicants).
 
 ## The idea
 The idea behind the development of ZFBONE it is simple!
 
-Provide the scientific community ..........
+We wanted to provide the zebrafish community with a set of semi-automatic tools to analyze the effects of bioactive compounds on several bone structures (e.g. operculum, caudal fin ray and scale). 
 
+ZFBONE is:
+
+- Easily implementable in any laboratory
+- Use standard image formats (i.e. TIFF/BMP)
+- It has a user-friendly interface
+- It is developed in ImageJ/FIJI, therefore open-source and easy to modify
+- It delivers final data in a simple format (.csv) and a graphical output for a posteriori confirmation of the analysis
 
 ## How to install/run it?
 Download the file "**ZFBONE.ijm**" from the repository and save it in the Fiji folder for macros. 
@@ -29,7 +36,7 @@ ZFBONE toolbar will appear in the main Fiji toolbar.
 
 
 ## How to cite us?
-Please cite us accordingly: **ADD paper citation**
+Please cite us accordingly: **Manuscript just submitted!**
 
 
 
@@ -52,21 +59,21 @@ ZFBONE toolbox proposes the following macros:
 
 **Quick introduction**
 
-The *operculum assay tool* allows the user to automatically measure the area of the head and the area of the operculum. It will then compute and return the ratio to normalize for inter-specimen variability.
+The *operculum assay* was developed to assess either the operculum mineralized area in wild-type larvae stained with bone-specific dye (i.e. alizarin red S or calcein) or the bone cell content in transgenic larvae expressing fluorescent proteins. 
 
-This macro is based on the publication: Tarasco, M., Laizé, V., Cardeira, J., Cancela, M.L., Gavaia, P.J., 2017. The zebrafish operculum: a powerful system to assess osteogenic bioactivities of molecules with pharmacological and toxicological relevance. Comp. Biochem. Physiol. Part C 147, 45–52. 
+More info about the assay are available in the publication: 
+
+Tarasco, M., Laizé, V., Cardeira, J., Cancela, M.L., Gavaia, P.J., 2017. The zebrafish operculum: a powerful system to assess osteogenic bioactivities of molecules with pharmacological and toxicological relevance. Comp. Biochem. Physiol. Part C 147, 45–52. 
 
 **Imput data**
 
-The macro needs an open image (RGB and flurorescent image) to start the process.
-In case other type of images are opened, the macro will recognize it and stop the process. 
+Depending on the type of analysis, 1 channel / 2 channels images (.tiff / .bmp) need to be open to start the analysis. Check in the folder **Test images** to download sample images and test the macro.
 
 **Output data**
 
-The macro will automatically create a folder (*"analized"*) in the same image directory which will contain the result table and a screenshot of the image analized showing the results and the ROI selected. This allows the user to confirm that all the  area selected are in fact the one wanted. 
+The macro will automatically create a folder (*"analized"*) in the same image directory which will contain the result table, a screenshot of the image analized showing the ROI selected and the ROI manager content in case the user wants to perform additional measuraments.
 
-
-**How to use it?  check the tutorial!**
+**How to use it?  Check the tutorial!**
 
 [![](http://img.youtube.com/vi/KXP4lwZmuEU/0.jpg)](http://www.youtube.com/watch?v=KXP4lwZmuEU "Operculum assay")
 
@@ -80,27 +87,27 @@ The macro will automatically create a folder (*"analized"*) in the same image di
 ###### SCALES ASSAY ![](icons/Scales_assay_logo.jpg)
 **Quick introduction**
 
-The *scale assay tool* allows the user to automatically analyse individual or multiple scales to evaluate osteoclast activity (scales stained through
-TRAP enzymatic assay) or demineralized bone (scales stained through Von Kossa). Once the user click on this tool, it will be asked to select which kind of scales assay was performed. 
+The *scale assay* was developed to automatically (after initial user selection) analyse individual or multiple scales to evaluate osteoclast activity (scales stained through TRAP enzymatic assay) or demineralized bone (scales stained through Von Kossa).
 
-From each scale the macro will return: scale area, circularity, aspect ratio, corrected circularity, TRAP positive area/Demineralized area (dependign on the analysis) and a normalized TRAP positive area/Demineralized area over the total scale area. 
+From each scale the macro will return: scale area, circularity, aspect ratio, TRAP positive area/Demineralized area (dependign on the analysis) and a normalized TRAP positive area/Demineralized area over the total scale area. 
 
-This macro was developed and published in the publication: Tarasco et al., XXXX
+More info about the assay area available in the publication: 
+
+De Vrieze, E., Van Kessel, M. A. H. J., Peters, H. M., Spanings, F. A. T., Flik, G., & Metz, J. R. (2014). Prednisolone induces osteoporosis-like phenotype in regenerating zebrafish scales. Osteoporosis International, 25(2), 567-578.
 
 
 **Imput data**
 
-The macro needs an open image (RGB and brigthfield image) to start the process. In case other type of images are opened, the macro will recognize it and stop the process.
-
+The macro needs an open image (RGB color image) to start the analysis. Check in the folder **Test images** to download sample images and test the macro.
 
 **Output data**
 
-The macro will automatically create a folder ("analized") in the same image directory which will contain the result table named accordigly to the type of staining assay chosen and a screenshot of the image analized showing the scales selected and the respectively TRAP positivie/demineralized areas. This allows the user to confirm that all the area selected are in fact the one wanted.
+The macro will automatically create a folder (*"analized"*) in the same image directory which will contain the result table, a screenshot of the image analized showing the ROI selected and the ROI manager content in case the user wants to perform additional measuraments.
 
 
 **How to use it?  check the tutorial!**
 
-VIDEO WILL BE ADDED HERE
+**SOON AVAILABLE...**
 
 
 
@@ -108,70 +115,48 @@ VIDEO WILL BE ADDED HERE
 ###### CAUDAL FIN ASSAY ![](icons/Caudal_fin.jpg)
 **Quick introduction**
 
-The *caudal fin assay* tool allows the user to quantify the effects on bone and tissue regeneration of regenerated caudal fins. It will then return raw measuraments and also compute normalization for inter-specimen variability.
+The *caudal fin assay* was developed to assess mineral content, ray morphometry or TRAP activity in regenerated caudal fin stained with bone specific staining (Alizarin Red or calcein) or TRAP. 
 
-This macro is based on the publication: Cardeira, J., Gavaia, P.J., Fernández, I., Cengiz, I.F., Moreira-Silva, J., Oliveira, J.M., Reis, R.L., Cancela, M.L., Laizé, V., 2016. Quantitative assessment of the regenerative and mineralogenic performances of the zebrafish caudal fin. Sci. Rep. 6, 39191.
+More info about the assay area available in the publication: 
+
+Cardeira, J., Gavaia, P.J., Fernández, I., Cengiz, I.F., Moreira-Silva, J., Oliveira, J.M., Reis, R.L., Cancela, M.L., Laizé, V., 2016. Quantitative assessment of the regenerative and mineralogenic performances of the zebrafish caudal fin. Sci. Rep. 6, 39191.
 
 **Imput data**
 
-The macro will ask the user to first open a RGB brightfield image and a RGB fluorescent image (i.e. the correspondent fluorescent image). In case other type of images are opened, the macro will recognize it and stop the process.
+The macro will ask the user to first open a brightfield image and then a fluorescent image (i.e. the correspondent fluorescent image). Both images can be of 1 channel or 3. accepted formats: .tiff / .bmp Check in the folder **Test images** to download sample images and test the macro.
 
 
 **Output data**
 
-The macro will automatically create a folder ("analized") in the same image directory which will contain the result table and a screenshot of the image analized showing the selected region of interest. This allows the user to confirm that all the area selected are in fact the one wanted.
+The macro will automatically create a folder (*"analized"*) in the same image directory which will contain the result table, a screenshot of the image analized showing the ROI selected and the ROI manager content in case the user wants to perform additional measuraments.
 
-**How to use it?  check the tutorial!**
+**How to use it?  Check the tutorial!**
 
-VIDEO WILL BE ADDED HERE
+**SOON AVAILABLE...**
 
 ***
-###### RAY BONE DENSITY ![](icons/ray_bone_density.jpg)
+###### RAY BONE INTENSITY ![](icons/ray_bone_density.jpg)
 **Quick introduction**
 
-The *ray bone density* tool allows the user to assess the bone mineral density of caudal fin rays. Selecting any ray number established by the user,the macro will return an intensity profile of each seleceted ray. The macro will the align each profile by the caudal fin amputation plane (point of higher intensity). the profile of each ray is then normalize to 1 in order to compare each ray among each other.
-
-This macro was developed and published in the publication: Tarasco et al., XXXX
-
-**Imput data**
-
-The macro will ask the user to first open an image (macro developed on microCT aquisitions saved as 16-bit tif). In case there is not an image open, the macro will stop.
-
-**Output data**
-
-The macro will automatically create a folder ("analized") in the same image directory which will contain the result table. In the result table, each ray intensity profile will be saved as raw data, aligned data and the normalized to 1 data. The analysed image showing the rays selected and the respectively intensity plot will be saved also. This allows the user to confirm that all the area selected are in fact the one wanted.
-
-
-
-**How to use it?  check the tutorial!**
-
-VIDEO WILL BE ADDED HERE
-
-
-***
-###### DATA PULLER ![](icons/data_puller.jpg)
-**Quick introduction**
-
-Tha *data puller tool* it was created in order to allign each analysed rays from control and treated fins in orderd to be able to compare them. 
+The *ray bone intensity assay* was developed to assess caudal fin ray intensity from imaged previously acquired through micro-computed tomography (microCT). The user in the menu, can choose either *Ray analysis* which allows the user to collect pixel intensity data from each ray (upon manual selection), or *Data pooling* option which will open the results previously collected (with Ray analysis) and allow the user to compare different caudal fins in the same intensity plot (for example control vs treated fins).
 
 
 **Imput data**
 
-The macro will ask the user to selected the folder containing previuous analysis obtained by the *ray density tool* previusly described. 
+The macro will ask the user to first open an image (macro developed on microCT aquisitions saved ). Check in the folder **Test images** to download sample images and test the macro.
 
 **Output data**
 
-The macro will return a result table containing all the rays alligned. Will also save a intensity profile image showing all the rays. 
+The macro will automatically create a folder ("analized") in the same image directory which will contain the result table. In the result table, each ray intensity profile will be saved as raw data, aligned data and the normalized to 1 data. In the folder will be saved also the analysed image showing the rays selected, the respectively intensity plot and the ROI manager content in case the user wants to perform additional measuraments.
 
 
-**How to use it?  check the tutorial!**
+**How to use it?  Check the tutorial!**
 
-VIDEO WILL BE ADDED HERE
-
+**SOON AVAILABLE...**
 
 
 ***
-## Acknowledgements
+# Acknowledgements
 We are thankfull for the support of the following labs & institutions
 
 
