@@ -38,7 +38,10 @@ ZFBONE toolbar will appear in the main Fiji toolbar.
 ## How to cite us?
 Please cite us accordingly: **Manuscript just submitted!**
 
+## Contact us
+ZFBONE is only a starting point for the development of more sophisticated tools... send us feedbacks to improve the toolset. 
 
+E-MAIL: **mtarasco@ualg.pt**
 
 ## How to use it?
 
