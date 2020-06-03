@@ -50,7 +50,7 @@ ZFBONE toolbox proposes the following macros:
 *	Operculum assay
 *	Scales assay
 *	Caudal fin assay
-*	Ray intensity
+*	Ray bone intensity
 
  
 
