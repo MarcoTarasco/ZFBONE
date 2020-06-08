@@ -75,8 +75,7 @@ The macro will automatically create a folder (*"analyzed"*) in the same image di
 
 **How to use it?  Check the tutorial!**
 
-[![](http://img.youtube.com/vi/mRRdfTQgBng/0.jpg)](http://www.youtube.com/watch?v=mRRdfTQgBng "Operculum macro tutorial")
-
+[![](http://img.youtube.com/vi/I98-uVbTj10/0.jpg)](http://www.youtube.com/watch?v=I98-uVbTj10 "Operculum tutorial")
 
 
 
@@ -106,8 +105,7 @@ The macro will automatically create a folder (*"analyzed"*) in the same image di
 
 **How to use it?  Check the tutorial!**
 
-[![](http://img.youtube.com/vi/RtHHLyU5kQE/0.jpg)](http://www.youtube.com/watch?v=RtHHLyU5kQE "Scale macro tutorial")
-
+[![](http://img.youtube.com/vi/RSwGUq35aDc/0.jpg)](http://www.youtube.com/watch?v=RSwGUq35aDc "Scale tutorial")
 
 
 ***
