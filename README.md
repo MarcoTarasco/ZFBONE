@@ -112,7 +112,7 @@ The macro will automatically create a folder (*"analyzed"*) in the same image di
 ###### CAUDAL FIN ASSAY ![](icons/Caudal_fin.jpg)
 **Quick introduction**
 
-The *caudal fin assay* was developed to assess mineral content, ray morphometry or TRAP activity in regenerated caudal fin stained with bone specific staining (alizarin red S or calcein) or TRAP. 
+The *caudal fin assay* was developed to assess mineral content, ray morphometry or osteoclas activity in regenerated caudal fin stained with bone specific staining (alizarin red S or calcein) or TRAP. 
 
 More info about the assay area available in the publication: 
 
