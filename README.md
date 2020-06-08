@@ -166,8 +166,7 @@ We are thankfull for the support of the following labs & institutions
 
 ![](icons/Bioskel_logo.jpg)
 ![](http://www.bic.u-bordeaux.fr/wp-content/uploads/2019/02/logo-FBI-BIC-300p-v0.png)
-![](icons/CCMAR_logo.png)
-![](icons/FCT_logo.jpeg)
+![](icons/CCMAR_logo.png)![](icons/FCT_logo.jpeg)
 ![](http://eubias.org/NEUBIAS/wp-content/uploads/2018/04/Webbanner_logosNEUBIAS-COST-sm.jpg)
 	
 
