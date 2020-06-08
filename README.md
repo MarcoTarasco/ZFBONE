@@ -75,7 +75,7 @@ The macro will automatically create a folder (*"analyzed"*) in the same image di
 
 **How to use it?  Check the tutorial!**
 
-[![](http://img.youtube.com/vi/KXP4lwZmuEU/0.jpg)](http://www.youtube.com/watch?v=KXP4lwZmuEU "Operculum assay")
+[![](http://img.youtube.com/vi/mRRdfTQgBng/0.jpg)](http://www.youtube.com/watch?v=mRRdfTQgBng "Operculum macro tutorial")
 
 
 
@@ -166,8 +166,8 @@ We are thankfull for the support of the following labs & institutions
 
 ![](icons/Bioskel_logo.jpg)
 ![](http://www.bic.u-bordeaux.fr/wp-content/uploads/2019/02/logo-FBI-BIC-300p-v0.png)
-![](icons/CCMAR logo.png)
-![](icons/FCT logo.jpeg)
+![](icons/CCMAR_logo.png)
+![](icons/FCT_logo.jpeg)
 ![](http://eubias.org/NEUBIAS/wp-content/uploads/2018/04/Webbanner_logosNEUBIAS-COST-sm.jpg)
 	
 
