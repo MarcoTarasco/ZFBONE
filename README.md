@@ -129,7 +129,7 @@ The macro will automatically create a folder (*"analyzed"*) in the same image di
 
 **How to use it?  Check the tutorial!**
 
-**SOON AVAILABLE...**
+[![](http://img.youtube.com/vi/MecFJo75jow/0.jpg)](http://www.youtube.com/watch?v=MecFJo75jow "Caudal fin macro")
 
 ***
 ###### RAY BONE INTENSITY ![](icons/ray_bone_density.jpg)
