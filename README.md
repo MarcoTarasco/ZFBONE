@@ -149,7 +149,7 @@ The macro will automatically create a folder ("analyzed") in the same image dire
 
 **How to use it?  Check the tutorial!**
 
-**SOON AVAILABLE...**
+[![](http://img.youtube.com/vi/k_MeW_2mHpk/0.jpg)](http://www.youtube.com/watch?v=k_MeW_2mHpk "Ray bone intensity tutorial")
 
 
 ***
