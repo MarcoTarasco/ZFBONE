@@ -33,7 +33,9 @@ ZFBONE toolbar will appear in the main FIJI toolbar.
 
 
 ## How to cite us?
-Please cite us accordingly: **Manuscript just submitted!**
+Please cite our paper: **ZFBONE: An ImageJ toolset for semi-automatic analysis of zebrafish bone structures.**
+
+[https://doi.org/10.1016/j.bone.2020.115480](https://doi.org/10.1016/j.bone.2020.115480)
 
 ## Contact us
 ZFBONE is only a starting point for the development of more sophisticated tools. Send us your feedbacks or ideas to improve the toolset. 
@@ -73,7 +75,7 @@ Depending on the type of analysis, 1 channel / 2 channel images (e.g. TIFF or BM
 
 The macro will automatically create a folder (*"analyzed"*) in the same image directory which will contain the result table, a screenshot of the image analized showing the ROI selected and the ROI manager content for *a posteriori* verification and in the case the user wants to perform additional measuraments.
 
-**How to use it?  Check the tutorial!**
+**How to use it?  Click on the image below and check the tutorial!**
 
 [![](http://img.youtube.com/vi/I98-uVbTj10/0.jpg)](http://www.youtube.com/watch?v=I98-uVbTj10 "Operculum tutorial")
 
@@ -103,7 +105,7 @@ User opens an image (RGB color image) to initiate the analysis. Check in the fol
 
 The macro will automatically create a folder (*"analyzed"*) in the same image directory which will contain the result table, a screenshot of the image analized showing the ROI selected and the ROI manager content for *a posteriori* verification and in the case the user wants to perform additional measuraments.
 
-**How to use it?  Check the tutorial!**
+**How to use it?  Click on the image below and check the tutorial!**
 
 [![](http://img.youtube.com/vi/RSwGUq35aDc/0.jpg)](http://www.youtube.com/watch?v=RSwGUq35aDc "Scale tutorial")
 
@@ -127,7 +129,7 @@ User will open a bright-field image and then a fluorescent image (i.e. the corre
 
 The macro will automatically create a folder (*"analyzed"*) in the same image directory which will contain the result table, a screenshot of the image analized showing the ROI selected and the ROI manager content for *a posteriori* verification and in the case the user wants to perform additional measuraments.
 
-**How to use it?  Check the tutorial!**
+**How to use it?  Click on the image below and check the tutorial!**
 
 [![](http://img.youtube.com/vi/MecFJo75jow/0.jpg)](http://www.youtube.com/watch?v=MecFJo75jow "Caudal fin macro")
 
@@ -147,7 +149,7 @@ The macro will ask the user to first open an image (macro developed on microCT a
 The macro will automatically create a folder ("analyzed") in the same image directory which will contain the result table. In the result table, each ray intensity profile will be saved as raw data, aligned data and the normalized to 1 data. In the folder will be saved also the analysed image showing the rays selected, the respectively intensity plot and the ROI manager content in case the user wants to perform additional measuraments.
 
 
-**How to use it?  Check the tutorial!**
+**How to use it?  Click on the image below and check the tutorial!**
 
 [![](http://img.youtube.com/vi/k_MeW_2mHpk/0.jpg)](http://www.youtube.com/watch?v=k_MeW_2mHpk "Ray bone intensity tutorial")
 
