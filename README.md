@@ -21,6 +21,19 @@ ZFBONE is:
 - It delivers final data in a simple format (.csv) and a graphical output for *a posteriori* confirmation of the analysis
 
 ## How to install/run it?
+
+### From FIJI Update Sites
+
+To install and receive automatic updates, just add ZFBONE in FIJI Update Sites. 
+
+Open FIJI, go to "Help" and click on "Update...". Then, click on "Manage update sites" and add ZFBONE. 
+
+Open FIJI, go to the "More tools" menu and click on ">>" in the toolbar then select the option “ZFBONE”. 
+
+ZFBONE toolbar will appear in the main FIJI toolbar.
+
+### Manual installation
+
 Download the file "**ZFBONE.ijm**" from the repository and save it in the FIJI folder for macros. 
 
 File location is: Applications\Fiji\macros\toolsets\ **ZFBONE.ijm**
