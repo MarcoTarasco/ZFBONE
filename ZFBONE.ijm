@@ -1,8 +1,8 @@
 /*
-ZFBONE - Version 1.0                 
+ZFBONE - Version 1.1                
 DEVELOPERS: Marco Tarasco & Fabrice Cordelières                                              
 EMAIL: marcotar90@gmail.com & fabrice.cordelieres@u-bordeaux.fr                              
-LAST EDITED: June 1st,2020
+LAST EDITED: July 30th,2020
 */
 
 
@@ -187,8 +187,9 @@ if (applyThreshold1=="Yes") {
 	if (ShowOpArea==true) setResult("Op area Ch1", nResults-1, areaOperculum);
 	if (UseHead=="Yes") {
 		setResult("Op/Hd Ch1", nResults-1, Ratio);
-		if (ShowInt==true)setResult("Signal intensity Ch1", nResults-1, TOtIntensity);
-	}
+	}	
+	if (ShowInt==true)setResult("Signal intensity Ch1", nResults-1, TOtIntensity);
+	
 
 	if (applyThreshold1=="Yes") {
 		setResult("Signal area Ch1", nResults-1, OpChOneFluoArea);
