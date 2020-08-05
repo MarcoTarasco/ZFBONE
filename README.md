@@ -34,7 +34,7 @@ ZFBONE toolbar will appear in the main FIJI toolbar.
 
 ### Manual installation
 
-Download the file "**ZFBONE.ijm**" from the repository and save it in the FIJI folder for macros. 
+Download the file "**ZFBONE.ijm**" from the [release section](https://github.com/MarcoTarasco/ZFBONE/releases/tag/v1.0), then save it in the FIJI application folder.
 
 File location is: Applications\Fiji\macros\toolsets\ **ZFBONE.ijm**
 
