@@ -1,8 +1,8 @@
 /*
-ZFBONE - Version 1.1                
+ZFBONE - Version 1.0                
 DEVELOPERS: Marco Tarasco & Fabrice Cordelières                                              
 EMAIL: marcotar90@gmail.com & fabrice.cordelieres@u-bordeaux.fr                              
-LAST EDITED: July 30th,2020
+LAST EDITED: August 5th,2020
 */
 
 
@@ -62,7 +62,7 @@ function iconAndLink(urlLink, urlIcon, width, height){
 
 //------------------------------------------OPERCULUM MACRO--------------------------------------------------//
 macro "Operculum assay Action Tool - C000D17D26D27D28D29D35D38D39D3aD45D4bD54D5bD63D6cD73D76D77D7cD82D86D87D8dD92D9dDa2DadDb2DbdDc2DcdDd2DddDe2DedDf2DfdCf00Db5DbbDc5Dc6DcbDd6Dd7Dd8Dd9DdaDdbDe7De8De9DeaDf9"{
-	
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");	
 //Menu options
 	Dialog.create("Operculum assay");
 	Dialog.addRadioButtonGroup("Mode", newArray("Single","Batch"),1, 2, "Single");
@@ -582,7 +582,7 @@ function autoContrast(){
 
 
 macro "Scale assay Action Tool - C000D02D0dD12D1dD22D2dD31D32D3dD3eD40D42D4dD4fD50D52D5dD5fD60D61D62D6dD6fD70D72D7dD7fD82D8dD8eD92D9dDa2DadDb2DbdDc2DcdDd2DddDe3De4DebDecDf3Df4DfbDfcCf00D03D05D07D09D0bD13D15D16D17D19D1aD1bD34D36D38D3aD3cD44D45D46D48D49D4aD4cD64D66D68D6aD6cD73D74D76D77D78D7aD7bD7cD93D95D97D99D9bDa3Da4Da5Da7Da8Da9DabDacDc4Dc6Dc8DcaDccDd4Dd5Dd6Dd8Dd9DdaDdcDf6Df8Dfa"{
-	
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");	
 //-------------------------------user menu setup-------------------------
 	Dialog.create("Scale assay");
 	Dialog.setInsets(0, 1, 0);
@@ -1595,7 +1595,7 @@ function colorThresholding(){
 
 //------------------------------------------CAUDAL FIN RAY BONE INTENSITY--------------------------------------------------//
 macro "Ray bone intensity Action Tool - C000D01D10D11D12D13D14D15D16D17D18D19D1aD1bD1cD1dD1eD21D2eD3eD4eD52D53D5eD61D62D63D64D6eD70D71D73D74D75D7eD80D81D82D83D84D85D8eD90D91D92D93D94D95D9eDa0Da1Da2Da3Da4Da5DaeDb1Db2Db3Db4DbeDc2Dc3DceDd2Dd3DdeDe1De4DedDeeDefDf0Df5DfeC01fD26D36D46D47D48D49D59D5aD5bD5cD6cD7cD8cD9cDacDbcDccDdcDddCf00D23D33D34D35D37D57D58D69D6aD7aD8aD9aD9bDabDbdCfffD66D76D88D98Da8DaaDb8DbaDc8Dca"{
-
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 //-------------------------------user menu setup-------------------------
 	Dialog.create("Ray bone intensity");
 	Dialog.setInsets(0, 1, 0);
