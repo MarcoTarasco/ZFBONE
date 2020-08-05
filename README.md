@@ -22,7 +22,9 @@ ZFBONE is:
 
 ## How to install/run it?
 
-### From FIJI Update Sites
+### From FIJI Update Sites 
+
+(Updates do not work for the moment... We suggest to do manual installation)
 
 To install and receive automatic updates, just add ZFBONE in FIJI Update Sites. 
 
