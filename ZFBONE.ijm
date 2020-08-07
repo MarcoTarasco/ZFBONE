@@ -1,8 +1,8 @@
 /*
-ZFBONE - Version 1.0                
+ZFBONE - Version 1.1                
 DEVELOPERS: Marco Tarasco & Fabrice Cordelières                                              
 EMAIL: marcotar90@gmail.com & fabrice.cordelieres@u-bordeaux.fr                              
-LAST EDITED: August 5th,2020
+LAST EDITED: August 7th,2020
 */
 
 
@@ -62,8 +62,9 @@ function iconAndLink(urlLink, urlIcon, width, height){
 
 //------------------------------------------OPERCULUM MACRO--------------------------------------------------//
 macro "Operculum assay Action Tool - C000D17D26D27D28D29D35D38D39D3aD45D4bD54D5bD63D6cD73D76D77D7cD82D86D87D8dD92D9dDa2DadDb2DbdDc2DcdDd2DddDe2DedDf2DfdCf00Db5DbbDc5Dc6DcbDd6Dd7Dd8Dd9DdaDdbDe7De8De9DeaDf9"{
-run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");	
+	
 //Menu options
+	
 	Dialog.create("Operculum assay");
 	Dialog.addRadioButtonGroup("Mode", newArray("Single","Batch"),1, 2, "Single");
 	Dialog.addRadioButtonGroup("Adjust contrast", newArray("Yes","No"),1, 2, "Yes");
@@ -135,6 +136,7 @@ run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 
 
 function doAnalysis(){
+	run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 	if (channel=="1") {	
 		if (nImages==0) waitForUser("Please open an image (1 channel)");
 		if (nImages==0) exit("No image was opened!!");
@@ -582,8 +584,9 @@ function autoContrast(){
 
 
 macro "Scale assay Action Tool - C000D02D0dD12D1dD22D2dD31D32D3dD3eD40D42D4dD4fD50D52D5dD5fD60D61D62D6dD6fD70D72D7dD7fD82D8dD8eD92D9dDa2DadDb2DbdDc2DcdDd2DddDe3De4DebDecDf3Df4DfbDfcCf00D03D05D07D09D0bD13D15D16D17D19D1aD1bD34D36D38D3aD3cD44D45D46D48D49D4aD4cD64D66D68D6aD6cD73D74D76D77D78D7aD7bD7cD93D95D97D99D9bDa3Da4Da5Da7Da8Da9DabDacDc4Dc6Dc8DcaDccDd4Dd5Dd6Dd8Dd9DdaDdcDf6Df8Dfa"{
-run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");	
+	
 //-------------------------------user menu setup-------------------------
+
 	Dialog.create("Scale assay");
 	Dialog.setInsets(0, 1, 0);
 	Dialog.addRadioButtonGroup("Staining", newArray("TRAP","von Kossa"),1, 2, "TRAP");
@@ -610,13 +613,15 @@ run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 	mode=Dialog.getRadioButton();
 	analysis=Dialog.getRadioButton();
 	numbtr=Dialog.getNumber();
-	
+
+
 	if (mode=="Single") {
 		
 		if (nImages==0) waitForUser("Open an image!!"); 
 		if (nImages==0) exit("No image was opened..."); 
 		if (bitDepth()!=24) exit("Open an RGB image!!"); 
 		img=getTitle();
+		run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 		dir=getDirectory("image");
 		dark=(assay=="TRAP");
 		getROI();
@@ -633,6 +638,7 @@ run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 				if (endsWith(toLowerCase(list[i]), ".bmp")||endsWith(toLowerCase(list[i]), ".tif")){ 
 	
 		           		open(dir+list[i]);
+		           		run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 		           		img=getTitle();
 						dir=getDirectory("image");
 		           		dark=(assay=="TRAP");
@@ -868,7 +874,7 @@ function SaveOutput(isTrap, dir, img){
 
 //------------------------------------------CAUDAL FIN MINERALIZATION & REGENERATION MACRO--------------------------------------------------//
 macro "Caudal fin assay Action Tool - C000D02D0dD13D1cD23D2eD32D41D4eD51D5fD61D71D76D77D79D7fD80D85D90D94D9bD9fDa0Da3Db0Db2DbdDbfDc0Dc1DceDd0DdfDe0Cf00D03D04D05D06D07D14D16D19D24D26D29D2bD33D34D36D39D3bD42D43D44D46D49D4bD52D56D59D5bD62D63D65D66D67D6bD6cD6dD72D73D74D75D7cD81D82D83D84D91D92D93Da1Da2Db1C30fD15D17D25D27D35D37D45D47D53D54D55D57D64"{
-	
+
 	Dialog.create("Caudal fin assay");
 	Dialog.setInsets(0, 1, 0);
 	Dialog.addRadioButtonGroup("Analysis", newArray("Bone mineralization (MIN)","Ray morphometrics (MORP)", "MIN & MORP", "TRAP signal"),4, 4, "Bone mineralization (MIN)");
@@ -909,12 +915,13 @@ macro "Caudal fin assay Action Tool - C000D02D0dD13D1cD23D2eD32D41D4eD51D5fD61D7
 	waitForUser("Open Brightfield image");
 	if (nImages==0) exit("Open an image!!");  
 	brightfield=getTitle();
-
+	run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 	waitForUser("Open fluorescence image");
 	
 	if (nImages==0) exit("Open an image!!"); 
 	 
 	fluorescence=getTitle();
+	run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 	path=getDirectory("image")+fluorescence;
 
 	run("Labels...", "color=white font=12 show use");
@@ -1101,6 +1108,7 @@ function Raymorphometrics() {
 	autoContrastCF(5, true);
 	
 	imgtitle=getTitle;
+	run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 	distanceMap();
 	selectWindow(imgtitle);
 	//Ask the number rays
@@ -1449,7 +1457,7 @@ function TRAPassay() {
 	brightfield=getTitle();
 	dir=getDirectory("image");
 	run("Labels...", "color=black font=12 show use");
-	
+	run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 	//Measures STU on brightfield
 	run("Line Width...", "line=1");
 	setTool("line");
@@ -1595,7 +1603,8 @@ function colorThresholding(){
 
 //------------------------------------------CAUDAL FIN RAY BONE INTENSITY--------------------------------------------------//
 macro "Ray bone intensity Action Tool - C000D01D10D11D12D13D14D15D16D17D18D19D1aD1bD1cD1dD1eD21D2eD3eD4eD52D53D5eD61D62D63D64D6eD70D71D73D74D75D7eD80D81D82D83D84D85D8eD90D91D92D93D94D95D9eDa0Da1Da2Da3Da4Da5DaeDb1Db2Db3Db4DbeDc2Dc3DceDd2Dd3DdeDe1De4DedDeeDefDf0Df5DfeC01fD26D36D46D47D48D49D59D5aD5bD5cD6cD7cD8cD9cDacDbcDccDdcDddCf00D23D33D34D35D37D57D58D69D6aD7aD8aD9aD9bDabDbdCfffD66D76D88D98Da8DaaDb8DbaDc8Dca"{
-run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+
+
 //-------------------------------user menu setup-------------------------
 	Dialog.create("Ray bone intensity");
 	Dialog.setInsets(0, 1, 0);
