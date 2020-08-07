@@ -1,5 +1,5 @@
 /*
-ZFBONE - Version 1.1                
+ZFBONE - Version 1.0                
 DEVELOPERS: Marco Tarasco & Fabrice Cordelières                                              
 EMAIL: marcotar90@gmail.com & fabrice.cordelieres@u-bordeaux.fr                              
 LAST EDITED: August 7th,2020
