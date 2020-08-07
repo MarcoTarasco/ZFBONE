@@ -136,7 +136,7 @@ macro "Operculum assay Action Tool - C000D17D26D27D28D29D35D38D39D3aD45D4bD54D5b
 
 
 function doAnalysis(){
-	run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+	
 	if (channel=="1") {	
 		if (nImages==0) waitForUser("Please open an image (1 channel)");
 		if (nImages==0) exit("No image was opened!!");
@@ -145,7 +145,7 @@ function doAnalysis(){
 		if (nImages==0) waitForUser("Please open an image (2 channel)");
 		if (nImages==0) exit("No image was opened!!");
 	}
-	
+	run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
 	roiManager("reset");
 	roiManager("Show None");
 	dir=getDirectory("image");
