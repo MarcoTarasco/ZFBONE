@@ -24,8 +24,6 @@ ZFBONE is:
 
 ### From FIJI Update Sites 
 
-(Updates do not work for the moment... We suggest to do manual installation)
-
 To install and receive automatic updates, just add ZFBONE in FIJI Update Sites. 
 
 Open FIJI, go to "Help" and click on "Update...". Then, click on "Manage update sites" and add ZFBONE. 
