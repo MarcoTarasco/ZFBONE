@@ -1,8 +1,8 @@
 /*
-ZFBONE - Version 1.0                
+ZFBONE - Version 1.1              
 DEVELOPERS: Marco Tarasco & Fabrice Cordelières                                              
 EMAIL: marcotar90@gmail.com & fabrice.cordelieres@u-bordeaux.fr                              
-LAST EDITED: August 7th,2020
+LAST EDITED: September 4th,2020
 */
 
 
@@ -15,7 +15,7 @@ function infoAbout(){
 	bioskelLink="http://bioskel.ccmar.ualg.pt/";
 	bioskelIcon="http://bioskel.ccmar.ualg.pt/images/bioskel.png"; 
 	bicLink="http://www.bic.u-bordeaux.fr/";
-	bicIcon="http://www.bic.u-bordeaux.fr/wp-content/uploads/2019/02/logo-FBI-BIC-300p-v0.png"; 
+	bicIcon="https://upload.wikimedia.org/wikipedia/commons/4/44/Logo_BIC.png";
 	neubiasLink="http://eubias.org/NEUBIAS/";
 	neubiasIcon="http://eubias.org/NEUBIAS/wp-content/uploads/2016/07/Logo36-300x159.png"; 
 	GitHub="https://github.com/MarcoTarasco/ZFBONE";
@@ -30,7 +30,8 @@ function infoAbout(){
 		+"<br><b>Fabrice Cordelières</b> (fabrice.cordelieres@u-bordeaux.fr)"
 		+"<br>"
 		+"<br>"
-		+"<font color=\"#cc0000\">Version 1.0</font>"
+		+"<font color=\"#cc0000\">Version 1.1     </font>"
+		+"<font color=\"#808080\">LAST EDITED: September 4th, 2020 </font>"
 		+"<br>"
 		+"Please check our page for updates and video tutorials on "
     	 +"<a href=\""+GitHub+"\">GitHub</a>"
@@ -42,8 +43,8 @@ function infoAbout(){
 		+"</font>"
 		+"<center>"
 		+iconAndLink(bioskelLink, bioskelIcon, 154, 128)
-		+iconAndLink(neubiasLink, neubiasIcon, 128, 128)
-		+iconAndLink(bicLink, bicIcon, 180, 128)
+		+iconAndLink(neubiasLink, neubiasIcon, 150, 80)
+		+iconAndLink(bicLink, bicIcon, 158, 57)
 		+"</center>"
 		+"</body>"
 		+"</html>";
@@ -1097,6 +1098,7 @@ function colorThresholding1(){
 //------------------------------------------
 function Raymorphometrics() {
 //Cleanup
+	run("Options...", "iterations=1 count=1");
 	roiManager("Reset");
 	roiManager("Show All with labels");
 	run("Labels...", "color=white font=12 show use");
@@ -1279,19 +1281,19 @@ Table.create("Summary Results");
 
 	for (i = 0; i < roiManager("count")/4; i++) {
 		selectWindow("Results");
-		StuBif=Table.get("Ray_"+(i+1)+"-IJ-SL", Table.size-1-3); 
-		BifIJL=Table.get("Ray_"+(i+1)+"-IJL-SL", Table.size-1-3); 
-		BifIJR=Table.get("Ray_"+(i+1)+"-IJR-SL", Table.size-1-3); 
+		StuBif=parseFloat(Table.get("Ray_"+(i+1)+"-IJ-SL", Table.size-1-3)); 
+		BifIJL=parseFloat(Table.get("Ray_"+(i+1)+"-IJL-SL", Table.size-1-3)); 
+		BifIJR=parseFloat(Table.get("Ray_"+(i+1)+"-IJR-SL", Table.size-1-3)); 
 		BifIR=(BifIJL+BifIJR)/2;
-		TOTijSL=Table.get("Ray_"+(i+1)+"-IJ-SL", Table.size-1-2);
-		TOTijlSL=Table.get("Ray_"+(i+1)+"-IJL-SL", Table.size-1-2);
-		TOTijrSL=Table.get("Ray_"+(i+1)+"-IJR-SL", Table.size-1-2);
-		AVGijSW=Table.get("Ray_"+(i+1)+"-IJ-SW", Table.size-1-1);
-		AVGijlSW=Table.get("Ray_"+(i+1)+"-IJL-SW", Table.size-1-1);
-		AVGijrSW=Table.get("Ray_"+(i+1)+"-IJR-SW", Table.size-1-1);
-		AVGijSL=Table.get("Ray_"+(i+1)+"-IJ-SL", Table.size-1-1);
-		AVGijlSL=Table.get("Ray_"+(i+1)+"-IJL-SL", Table.size-1-1);
-		AVGijrSL=Table.get("Ray_"+(i+1)+"-IJR-SL", Table.size-1-1);
+		TOTijSL=parseFloat(Table.get("Ray_"+(i+1)+"-IJ-SL", Table.size-1-2));
+		TOTijlSL=parseFloat(Table.get("Ray_"+(i+1)+"-IJL-SL", Table.size-1-2));
+		TOTijrSL=parseFloat(Table.get("Ray_"+(i+1)+"-IJR-SL", Table.size-1-2));
+		AVGijSW=parseFloat(Table.get("Ray_"+(i+1)+"-IJ-SW", Table.size-1-1));
+		AVGijlSW=parseFloat(Table.get("Ray_"+(i+1)+"-IJL-SW", Table.size-1-1));
+		AVGijrSW=parseFloat(Table.get("Ray_"+(i+1)+"-IJR-SW", Table.size-1-1));
+		AVGijSL=parseFloat(Table.get("Ray_"+(i+1)+"-IJ-SL", Table.size-1-1));
+		AVGijlSL=parseFloat(Table.get("Ray_"+(i+1)+"-IJL-SL", Table.size-1-1));
+		AVGijrSL=parseFloat(Table.get("Ray_"+(i+1)+"-IJR-SL", Table.size-1-1));
 //Set summary table
 		selectWindow("Summary Results");
 		Table.set("Label", Table.size, "Ray_"+(i+1));
